@@ -3,8 +3,8 @@ const CLIENT_ID = '677079530027-ghplut5iii5j47s7hsn88g7r797maula.apps.googleuser
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/drive.metadata.readonly';
 
-const authorizeButton = document.getElementById('authorize_button');
-const signoutButton = document.getElementById('signout_button');
+const authorizeButton = document.getElementById('authorize-button');
+const signoutButton = document.getElementById('signout-button');
 const content = document.getElementById('content');
 const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
@@ -35,7 +35,7 @@ function initClient(){
         //Listen for sign in state changes
         gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
         //Handle intial sign in state
-        updateSigninStatus(true);
+        updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
         authorizeButton.onClick=handleAuthClick;
         signoutButton.onClick = handleSignoutClick;
     });

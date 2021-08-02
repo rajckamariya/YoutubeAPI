@@ -1,5 +1,5 @@
 //Options
-const CLIENT_ID = '677079530027-2heu8cfmcms3i4coeavqnugb7jsglpmn.apps.googleusercontent.com';
+const CLIENT_ID = '677079530027-ghplut5iii5j47s7hsn88g7r797maula.apps.googleusercontent.com';
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/drive.metadata.readonly';
 

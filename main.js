@@ -60,6 +60,7 @@ function updateSigninStatus(isSignedIn){
 //Handle Login
 
 function handleAuthClick(){
+    console.log("Clicked");
     gapi.auth2.getAuthInstance().signIn();
 }
 
